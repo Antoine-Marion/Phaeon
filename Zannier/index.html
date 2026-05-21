@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phaeon — Yacht Targets</title>
+<style>
+  body { margin:0; padding:0; background:#EBEBEB; -webkit-text-size-adjust:100%; }
+  table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+  img { display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
 
+  /* Hero image: always fixed-height cropped — no height:auto override */
+  .img-hero {
+    width:600px;
+    height:150px;
+    object-fit:cover;
+    filter:brightness(0.92);
+    display:block;
+  }
+
+  /* Specs flex grid — 4-up desktop, 2×2 mobile */
+  .specs-grid {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:12px;
+    padding-top:12px;
+    border-top:1px solid #EEEEEE;
+  }
+  .spec {
+    width:25%;
+    box-sizing:border-box;
+    padding:0 0 0 0;
+  }
+  .spec-label {
+    margin:0;
+    font-size:7px;
+    letter-spacing:2px;
+    color:#BBBBBB;
+    text-transform:uppercase;
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  .spec-value {
+    margin:3px 0 0;
+    font-size:12px;
+    color:#1A1A1A;
+    font-weight:600;
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+
+  @media screen and (max-width:600px) {
+    .container { width:100% !important; }
+
+    /* Image: fixed crop maintained on mobile — same cinematic frame as desktop */
+    .img-hero {
+      width:100% !important;
+      height:130px !important;
+      min-height:unset !important;
+      object-fit:cover !important;
+      object-position:inherit !important; /* keep per-yacht value from inline style */
+    }
+
+    /* Specs: 2×2 grid — dense, no stacking */
+    .spec {
+      width:50% !important;
+      padding:6px 0 6px 0 !important;
+      border-bottom:1px solid #F4F4F4;
+    }
+    .spec:nth-child(1),
+    .spec:nth-child(2) { border-top: none; }
+    .spec:nth-child(3),
+    .spec:nth-child(4) { border-bottom: none; }
+    .spec:nth-child(odd) { padding-right:8px !important; }
+    .spec-label { font-size:6.5px !important; }
+    .spec-value { font-size:11px !important; }
+
+    /* Tighter card padding on mobile */
+    .card-body { padding:10px 16px 12px 16px !important; }
+
+    /* Header padding */
+    .header-cell { padding:18px 20px 14px 20px !important; }
+
+    /* Section label */
+    .section-label { padding:6px 16px !important; }
+
+    /* Name row */
+    .name-row { font-size:14px !important; }
+    .link-row { font-size:8px !important; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#EBEBEB;">
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EBEBEB">
+  <tr>
+    <td align="center" style="padding:24px 0;">
+
+      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"
+        style="font-family:'Segoe UI',Helvetica,Arial,sans-serif;background:#FFFFFF;width:600px;">
+
+        <!-- HEADER -->
+        <tr>
+          <td bgcolor="#F0F0F0" align="center" class="header-cell" style="padding:22px 32px 18px 32px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:14px;">
+              <tr><td height="1" bgcolor="#B01828" style="font-size:0;line-height:0;">&nbsp;</td></tr>
+            </table>
+            <p style="margin:0;font-size:29px;letter-spacing:6px;color:#0A0A0A;text-transform:uppercase;font-weight:600;">Phaeon</p>
+            <p style="margin:6px 0 0;font-size:19px;letter-spacing:4px;color:#555555;text-transform:uppercase;font-weight:400;">Yacht Targets</p>
+            <table width="40" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:14px auto 0 auto;">
+              <tr><td height="1" bgcolor="#B01828" style="font-size:0;line-height:0;">&nbsp;</td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SAILING YACHTS LABEL -->
+        <tr>
+          <td bgcolor="#F0F0F0" class="section-label" style="padding:8px 24px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-left:2px solid #B01828;padding-left:10px;">
+                  <p style="margin:0;font-size:8px;letter-spacing:4px;color:#1A1A1A;text-transform:uppercase;font-weight:600;">Sailing Yachts</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- ANTARES -->
+        <tr>
+          <td style="padding:0;border-bottom:1px solid #E8E8E8;">
+            <a href="https://www.fraseryachts.com/en/yacht-for-sale/antares-1/" target="_blank">
+              <img src="https://cdn.boatinternational.com/convert/listing/2025/11/fefdcd10-bb27-11f0-8356-ed4ddf984804-antares%20hero.jpg/r%5Bwidth%5D=1920/fefdcd10-bb27-11f0-8356-ed4ddf984804-antares%20hero.jpg"
+                alt="ANTARES" class="img-hero"
+                style="object-position:center 100%;" />
+            </a>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="card-body" style="padding:14px 24px 16px 24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle">
+                        <span style="display:inline-block;background:#0A0A0A;padding:3px 8px;font-size:8px;font-weight:600;letter-spacing:2px;color:#FFFFFF;text-transform:uppercase;">S/Y</span>
+                        <span class="name-row" style="font-size:17px;font-weight:300;letter-spacing:2px;color:#0A0A0A;text-transform:uppercase;margin-left:8px;">Antares</span>
+                        <div style="font-size:10px;color:#999999;letter-spacing:1px;margin-top:2px;">Royal Huisman</div>
+                      </td>
+                      <td valign="middle" align="right">
+                        <a href="https://www.fraseryachts.com/en/yacht-for-sale/antares-1/" target="_blank"
+                          class="link-row" style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#B01828;text-decoration:none;font-weight:500;">View listing &rsaquo;</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="specs-grid">
+                    <div class="spec"><p class="spec-label">Length</p><p class="spec-value">40 m / 131'</p></div>
+                    <div class="spec"><p class="spec-label">Built / Refit</p><p class="spec-value">2005 / 2025</p></div>
+                    <div class="spec"><p class="spec-label">Guests</p><p class="spec-value">10 &middot; 4 cabins</p></div>
+                    <div class="spec"><p class="spec-label">Crew</p><p class="spec-value">6</p></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- SURAMA -->
+        <tr>
+          <td style="padding:0;border-bottom:1px solid #E8E8E8;">
+            <a href="https://sabyliveweu01.blob.core.windows.net/pdf-singleyachts/SURAMA_00006725_Sale_en.pdf?v=2026-04-30-01-01-02" target="_blank">
+              <img src="https://cdn.boatinternational.com/convert/listing/2026/04/cd19ee00-3368-11f1-bfe5-e9b95a415dcc-SURAMA-4513-Superyachts_For_Sale_Charter-0020.jpg/r%5Bwidth%5D=1920/cd19ee00-3368-11f1-bfe5-e9b95a415dcc-SURAMA-4513-Superyachts_For_Sale_Charter-0020.jpg"
+                alt="SURAMA" class="img-hero"
+                style="object-position:center 100%;" />
+            </a>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="card-body" style="padding:14px 24px 16px 24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle">
+                        <span style="display:inline-block;background:#0A0A0A;padding:3px 8px;font-size:8px;font-weight:600;letter-spacing:2px;color:#FFFFFF;text-transform:uppercase;">S/Y</span>
+                        <span class="name-row" style="font-size:17px;font-weight:300;letter-spacing:2px;color:#0A0A0A;text-transform:uppercase;margin-left:8px;">Surama</span>
+                        <div style="font-size:10px;color:#999999;letter-spacing:1px;margin-top:2px;">Royal Huisman</div>
+                      </td>
+                      <td valign="middle" align="right">
+                        <a href="https://sabyliveweu01.blob.core.windows.net/pdf-singleyachts/SURAMA_00006725_Sale_en.pdf?v=2026-04-30-01-01-02" target="_blank"
+                          class="link-row" style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#B01828;text-decoration:none;font-weight:500;">Download brochure &rsaquo;</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="specs-grid">
+                    <div class="spec"><p class="spec-label">Length</p><p class="spec-value">40.7 m / 133'</p></div>
+                    <div class="spec"><p class="spec-label">Built / Refit</p><p class="spec-value">1997 / 2017</p></div>
+                    <div class="spec"><p class="spec-label">Guests</p><p class="spec-value">8 &middot; 3 cabins</p></div>
+                    <div class="spec"><p class="spec-label">Crew</p><p class="spec-value">6</p></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- GWEILO -->
+        <tr>
+          <td style="padding:0;border-bottom:1px solid #E8E8E8;">
+            <a href="https://www.fraseryachts.com/en/yacht-for-sale/gweilo/" target="_blank">
+              <img src="https://cdn.boatinternational.com/convert/listing/2023/06/6773fe50-14c2-11ee-9db1-4745441b763b-GWEILO_superyacht_for_sale_charter_01.jpg/r%5Bwidth%5D=1920/6773fe50-14c2-11ee-9db1-4745441b763b-GWEILO_superyacht_for_sale_charter_01.jpg"
+                alt="GWEILO" class="img-hero"
+                style="object-position:center 90%;" />
+            </a>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="card-body" style="padding:14px 24px 16px 24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle">
+                        <span style="display:inline-block;background:#0A0A0A;padding:3px 8px;font-size:8px;font-weight:600;letter-spacing:2px;color:#FFFFFF;text-transform:uppercase;">S/Y</span>
+                        <span class="name-row" style="font-size:17px;font-weight:300;letter-spacing:2px;color:#0A0A0A;text-transform:uppercase;margin-left:8px;">Gweilo</span>
+                        <div style="font-size:10px;color:#999999;letter-spacing:1px;margin-top:2px;">Mengi Yay &middot; Dykstra</div>
+                      </td>
+                      <td valign="middle" align="right">
+                        <a href="https://www.fraseryachts.com/en/yacht-for-sale/gweilo/" target="_blank"
+                          class="link-row" style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#B01828;text-decoration:none;font-weight:500;">View listing &rsaquo;</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="specs-grid">
+                    <div class="spec"><p class="spec-label">Length</p><p class="spec-value">47.4 m / 155'</p></div>
+                    <div class="spec"><p class="spec-label">Built / Refit</p><p class="spec-value">2009 / 2022</p></div>
+                    <div class="spec"><p class="spec-label">Guests</p><p class="spec-value">8 &middot; 3 cabins</p></div>
+                    <div class="spec"><p class="spec-label">Crew</p><p class="spec-value">7</p></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MOTOR YACHTS LABEL -->
+        <tr>
+          <td bgcolor="#F0F0F0" class="section-label" style="padding:8px 24px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="border-left:2px solid #B01828;padding-left:10px;">
+                  <p style="margin:0;font-size:8px;letter-spacing:4px;color:#1A1A1A;text-transform:uppercase;font-weight:600;">Motor Yachts</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- CHRISTINA O -->
+        <tr>
+          <td style="padding:0;">
+            <a href="https://www.luxurychartergroup.com/cms/uploads/christina-o-bf-brochure.pdf" target="_blank">
+              <img src="https://cdn.boatinternational.com/convert/files/2021/10/02b15180-32b4-11ec-8a83-51c8efdd65c3-christina-o.jpg/r%5Bwidth%5D=1920/02b15180-32b4-11ec-8a83-51c8efdd65c3-christina-o.jpg"
+                alt="CHRISTINA O" class="img-hero"
+                style="object-position:center 70%;" />
+            </a>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="card-body" style="padding:14px 24px 16px 24px;">
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle">
+                        <span style="display:inline-block;background:#B01828;padding:3px 8px;font-size:8px;font-weight:600;letter-spacing:2px;color:#FFFFFF;text-transform:uppercase;">M/Y</span>
+                        <span class="name-row" style="font-size:17px;font-weight:300;letter-spacing:2px;color:#0A0A0A;text-transform:uppercase;margin-left:8px;">Christina O</span>
+                        <div style="font-size:10px;color:#999999;letter-spacing:1px;margin-top:2px;">Canadian Vickers &middot; ex-Onassis</div>
+                      </td>
+                      <td valign="middle" align="right">
+                        <a href="https://www.luxurychartergroup.com/cms/uploads/christina-o-bf-brochure.pdf" target="_blank"
+                          class="link-row" style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#B01828;text-decoration:none;font-weight:500;">Download brochure &rsaquo;</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="specs-grid">
+                    <div class="spec"><p class="spec-label">Length</p><p class="spec-value">99.1 m / 325'</p></div>
+                    <div class="spec"><p class="spec-label">Built / Refit</p><p class="spec-value">1943 / 2022</p></div>
+                    <div class="spec"><p class="spec-label">Guests</p><p class="spec-value">34 &middot; 17 cabins</p></div>
+                    <div class="spec"><p class="spec-label">Crew</p><p class="spec-value">38</p></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td bgcolor="#F0F0F0" align="center" style="padding:14px 32px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr><td height="1" bgcolor="#B01828" style="font-size:0;line-height:0;">&nbsp;</td></tr>
+            </table>
+            <p style="margin:10px 0 0;font-size:8px;letter-spacing:3px;color:#555555;text-transform:uppercase;">Phaeon &mdash; Private Members Club</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
